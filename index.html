@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Agenda 2026 • Diário + Livro Caixa</title>
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- pdf-lib (leve e bom) -->
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logoDot"></div>
+        <div class="brandText">
+          <div class="brandTitle">Agenda 2026</div>
+          <div class="brandSub">Diário + Livro Caixa • Offline</div>
+        </div>
+      </div>
+
+      <nav class="tabs">
+        <button class="tab" data-route="home">Hoje</button>
+        <button class="tab" data-route="diary">Diário</button>
+        <button class="tab" data-route="cash">Livro Caixa</button>
+        <button class="tab" data-route="reports">Relatórios</button>
+        <button class="tab" data-route="backup">Backup</button>
+      </nav>
+    </header>
+
+    <main id="view" class="view"></main>
+
+    <footer class="footer">
+      <span class="muted">Tema: Grafite + Azul Petróleo</span>
+      <span id="status" class="status">Pronto.</span>
+    </footer>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
